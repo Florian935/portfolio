@@ -1,0 +1,11 @@
+@import "../../stylings/styles.scss";
+
+.light {
+    color: mat-color($dark, 500);
+    background-color: mat-color($light, 300);
+}
+
+.dark {
+    color: mat-color($light, 300);
+    background: mat-color($dark, 300);
+}

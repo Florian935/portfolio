@@ -1,0 +1,21 @@
+@import "_variables.scss";
+@import "_colors.scss";
+@import "_theming.scss";
+
+h1 {
+    background-color: mat-color($primary, 200);
+    color: $primary-color;
+}
+
+h2 {
+    background-color: mat-color($warn, 200); 
+    color: $warn-color;
+}
+
+h3 {
+    background-color: mat-color($accent, 200); 
+    color: $accent-color;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
