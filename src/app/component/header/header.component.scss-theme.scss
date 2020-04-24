@@ -1,0 +1,26 @@
+@import '~@angular/material/theming';
+
+@mixin header-theme($theme, $background, $color-text) {
+    $accent: map-get($theme, accent);
+    $primary: map-get($theme, primary);
+    $warn: map-get($theme, warn);
+    $back: map-get($theme, background);
+    $background-color: mat-color($back, card);
+    $background-color-primary: mat-color($primary, darker, 1);
+    $background-color-accent: mat-color($accent, lighter, 1);
+    $background-color-warn: mat-color($warn, lighter, 1);
+
+
+    .header {
+        @include mat-elevation(2);
+        background-color: $background;
+        color: $color-text;
+        
+        h1 {
+            font-size: 23px;
+            letter-spacing: 1.5px;
+            font-style: italic;
+            font-weight: 500;
+        }
+    }
+}

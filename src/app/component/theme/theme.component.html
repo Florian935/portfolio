@@ -1,0 +1,15 @@
+<div class="theme-component">
+    <!-- <mat-slide-toggle [checked]="isDarkTheme | async" (change)="toggleDarkTheme($event.checked)">
+        Changer theme
+    </mat-slide-toggle> -->
+
+    <button class="button-theme" mat-flat-button [matMenuTriggerFor]="appMenu" matTooltip="select an other theme for the portfolio">
+        <mat-icon>format_color_fill</mat-icon>Theme</button>
+    <mat-menu #appMenu="matMenu">
+        <button mat-menu-item (click)="changeTheme('light')">Light theme</button>
+        <button mat-menu-item (click)="changeTheme('dark')">Dark theme</button>
+        <!-- <mat-slide-toggle [checked]="isDarkTheme | async" (change)="toggleDarkTheme($event.checked)">
+            Changer theme
+        </mat-slide-toggle> -->
+    </mat-menu>
+</div>

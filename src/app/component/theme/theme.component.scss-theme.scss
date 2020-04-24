@@ -1,0 +1,61 @@
+@import '~@angular/material/theming';
+
+@mixin theme-component-theme($theme, $background, $color-text) {
+    $accent: map-get($theme, accent);
+    $primary: map-get($theme, primary);
+    $warn: map-get($theme, warn);
+    $back: map-get($theme, background);
+    $background-color: mat-color($back, card);
+    $background-color-primary: mat-color($primary, darker, 1);
+    $background-color-accent: mat-color($accent, lighter, 1);
+    $background-color-warn: mat-color($warn, lighter, 300);
+
+
+    .theme-component {
+        //@include mat-elevation(3);
+        background-color: $background;
+        color: $color-text;
+
+        .button-theme {
+            background-color: #eeeeee;
+            color: #9c8e88;
+            border: solid rgb(197, 197, 197) 1px;
+
+            &:hover {
+                background-color: rgb(216, 215, 215);
+            }
+        }
+    }
+
+}
+
+// IMBRICATION:
+// .parent {
+//     color: red;
+
+//     .child {
+//         color: blue;
+//     }
+// }
+
+// Donne à la compilation:
+
+// .parent {
+//     color: red;
+// }
+
+// .parent .child {
+//     color: blue;
+// }
+
+// SELECTEUR DE REFERENCE '&':
+// .element {
+//     &:hover {
+//         color: red;
+//     }
+// }
+
+// Donne à la compilation: (attention aux espaces qui sont générés entre le '&' et le selecteur !)
+// .element:hover {
+//     color: red;
+// }

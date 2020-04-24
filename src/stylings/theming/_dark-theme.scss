@@ -1,0 +1,21 @@
+@import "~@angular/material/theming";
+@import '../component-themes';
+
+@include mat-core();
+
+.dark-theme {
+    $dark-primary: mat-palette($mat-green, 700);
+    $dark-accent: mat-palette($mat-grey);
+    $dark-warn: mat-palette($mat-red);
+    $background-component: mat-color(mat-palette($mat-grey), 800);
+    $background-header: mat-color(mat-palette($mat-grey), 700);
+    $background-footer: mat-color(mat-palette($mat-grey), 900);
+    $color-text: mat-color(mat-palette($mat-grey), lighter);
+    $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn); // mat-dark-theme -> permet de mettre en dark tous les éléments de Angular Material (background etc)
+    background-color: mat-color(mat-palette($mat-grey), 900, 0.9);
+
+    @include angular-material-theme($dark-theme);
+    @include component-themes($dark-theme, $background-component, $color-text);
+    @include header-themes($dark-theme, $background-header, $color-text);
+    @include footer-themes($dark-theme, $background-footer, $color-text);
+}

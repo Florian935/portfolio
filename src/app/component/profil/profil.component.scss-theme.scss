@@ -1,0 +1,75 @@
+@import '~@angular/material/theming';
+
+@mixin tile-theme($theme, $background, $color-text) {
+    $accent: map-get($theme, accent);
+    $primary: map-get($theme, primary);
+    $warn: map-get($theme, warn);
+    $back: map-get($theme, background);
+    $background-color: mat-color($back, card);
+    $background-color-primary: mat-color($primary, darker, 1);
+    $background-color-accent: mat-color($accent, 900, 0.2);
+    $background-color-warn: mat-color($warn, lighter, 300);
+
+
+    .profil {
+        padding: 90px 0 20px 0;
+
+        .container {
+            @include mat-elevation(4);
+            border-radius: 4px;
+            width: 70%;
+            margin: auto;
+            padding: 25px;
+            background-color: $background-color;
+        
+            .detail-langage {
+                background-color: $background-color-accent;
+                padding-bottom: 3px;
+                padding-top: 3px;
+                @include mat-elevation(2);
+            }
+        }
+
+        div {
+            color: $color-text;
+            width: 70%;
+        }
+
+        p {
+        font-size: 16px;
+        }
+    }
+}
+
+// mat-palette -> selection de la couleur 
+//                      -1er param: selection d'une palette de couleur (variable qui déclare plusieurs variations et contrastes de couleur)
+//                      -2eme param: selection du contraste par défaut de la palette de couleur choisie
+//                      -3eme param: selection du contraste "lighter"
+//                      -4eme param: selection du contraste "darker"
+//                      -return: une palette de couleur
+
+// mat-color -> selection de la couleur par rapport à une palette de couleur. (mat-palette)
+//                      -1er param: return du mat-palette
+//                      -2eme param: nuance de la couleur
+//                      -3eme param: opacité (entre 0 et 1, 0 = transparent, 1 = opaque)
+//                      -return: une couleur (rgba(255, 140, 100, 0.5), #000000, etc)
+
+// map-get -> récupération du contenu par rapport à la clé fournie pour un objet donné
+//                      -1er param: objet à traiter
+//                      -2ème param: clé du contenu qu'on souhaite récupérer pour l'objet donné
+//                                   Exemple: objet $theme = [accent: mat-palette($mat-indigo), primary: mat-palette($mat-pink)]
+//                                            on souhaite récupérer le contenu de la clé 'accent' de l'objet '$theme', on la récupère donc comme ceci:
+//                                            $maVariable: map-get($theme, accent) 
+//                      -return: le contenu de la clé fournie pour l'objet donné
+
+// @import -> import le fichier scss stipulé. Lorsqu'on importe le fichier, on importe tout le contenu scss du fichier importé à l'endroit ou l'on 
+// écrit la directive @import
+
+// @include -> import un @mixin à l'endroit ou on écrit la directive @include. Cela permet d'importer uniquement un bout de code et non pas 
+// l'entiereté d'un fichier scss
+
+// @mixin -> permet de définir un ensemble de déclaration de styles scss qui pourra être réutilisable (notamment via include). Un mixin peut prendre
+// des paramètres
+
+// @function -> à la différence d'un @mixin qui renvoit plusieurs lignes de code CSS quand on l'appelle, une fonction retourne une ou des valeurs et 
+// non pas des déclarations de styles

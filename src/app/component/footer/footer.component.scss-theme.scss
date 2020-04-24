@@ -1,0 +1,26 @@
+@import '~@angular/material/theming';
+
+@mixin footer-theme($theme, $background, $color-text) {
+    $accent: map-get($theme, accent);
+    $primary: map-get($theme, primary);
+    $warn: map-get($theme, warn);
+    $back: map-get($theme, background);
+    $background-color: mat-color($back, card);
+    $background-color-primary: mat-color($primary, darker, 1);
+    $background-color-accent: mat-color($accent, lighter, 1);
+    $background-color-warn: mat-color($warn, lighter, 1);
+
+
+    .footer {
+        background-color: $background;
+        color: $color-text;
+        text-align: center;
+        font-size: 17px;
+        height: 71px;
+
+        p {
+            padding: 26px 0;
+            margin-bottom: 0px;
+        }
+    }
+}

@@ -1,4 +1,5 @@
-import { ColorPickerService } from './../core/services/color-picker.service';
+import { Observable } from 'rxjs';
+import { ThemePickerService } from '../core/services/theme-picker.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,17 +7,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
 
-  themeClass;
+  isDarkTheme: Observable<boolean>;
+  theme: Observable<string>;
+  themeColor: string;
 
-  constructor(private colorPicker: ColorPickerService) {
-    this.themeClass = this.colorPicker.getColorClass();
-  }
+  constructor(private themePicker: ThemePickerService) { }
 
-  ngOnInit(): void {}
-
-  pickColor(color: string) {
-
+  ngOnInit(): void {
+    this.isDarkTheme = this.themePicker.isDarkTheme;
+    this.theme = this.themePicker.theme;
+    this.themePicker.theme.subscribe(
+      (theme) => this.themeColor = theme
+    );
   }
 }

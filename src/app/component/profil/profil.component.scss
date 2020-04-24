@@ -1,0 +1,199 @@
+.contenu {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2rem;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-style: italic;
+}
+
+mat-divider {
+    margin: 40px 40px;
+}
+
+.cv {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bienvenue {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.contenu-bienvenue {
+    margin-top: 40px;
+    text-align: center;
+}
+
+mat-card {
+    width: 40%;
+    height: 400px;
+}
+
+.titre-competence {
+    margin-bottom: 40px;
+}
+
+.mes-competences {
+    display: flex;
+
+    mat-icon {
+        margin-top: 3px;
+        margin-right: 7px;
+    }
+}
+
+.fa-spin {
+    height: 21px;
+    width: 21px;
+    margin-top: 6.5px;
+    font-size: 23px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.container .competences {
+    width: 100%;
+    height: 950px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.profil .angular {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+    background-image: url("../../../assets/logo-angular.png");
+    background-size: cover;
+}
+
+.profil .springboot {
+    background-image: url("../../../assets/logo-spring-boot.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-top: 7px;
+    margin-right: 13px;
+    margin-left: 3px;
+}
+
+.profil .symfony {
+    background-image: url("../../../assets/logo-symfony.png");
+    background-size: cover;
+    width: 47px;
+    height: 47px;
+    margin-right: 13px;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+
+
+.profil .csharp {
+    background-image: url("../../../assets/logo-csharp.png");
+    background-size: cover;
+    width: 47px;
+    height: 47px;
+    margin-right: 13px;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+
+.profil .java {
+    background-image: url("../../../assets/logo-java.png");
+    background-size: cover;
+    width: 47px;
+    height: 47px;
+    margin-right: 13px;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+
+.profil .python {
+    background-image: url("../../../assets/logo-python.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-right: 13px;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+
+.profil .cplusplus {
+    background-image: url("../../../assets/logo-cplusplus.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-right: 13px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.description-cplusplus, .description-python {
+    padding-top: 9px;
+    padding-bottom: 2px;
+}
+
+.description-cplusplus-ide, .description-python-ide {
+    padding-bottom: 9px;
+}
+
+.profil .mysql {
+    background-image: url("../../../assets/logo-mysql.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-right: 13px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.profil .postgresql {
+    background-image: url("../../../assets/logo-postgresql.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-right: 13px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.description-mysql, .description-postgresql {
+    padding-top: 17px;
+}
+
+.profil .detail-langage {
+    display: flex;
+    margin-top: 14px;
+    margin-left: 5px;
+    border-radius: 5px;
+    width: 98%;
+
+    .description div {
+        width: 100%;
+    }
+}
+
+
+
+mat-card-content {
+    margin-top: 25px;
+}
+
+.profil .divider-competence {
+    width: 80%;
+    margin: 1% 10%;
+}
+
+.description-merise, .description-uml {
+    padding: 10px;
+}

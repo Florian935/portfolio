@@ -1,0 +1,53 @@
+.fill-remaining-space {
+    flex: 1 1 auto;
+}
+
+.sticky {
+    position: fixed;
+    overflow: hidden;
+    z-index: 10;
+}
+
+button {
+    margin-right: 15px;
+
+    &:hover {
+        background-color: rgb(209, 209, 209, 0.1);
+        border: none;
+    }
+}
+
+.active {
+    background-color: #bcaaa4;
+}
+
+.fa-code {
+    color: #f44336;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 4px;
+    margin-bottom: 6px;
+    animation: clair 1.2s infinite;
+
+    @keyframes clair{
+        0%{
+            opacity: 0.1;
+        }
+        20% {
+            opacity: 0.2;
+        }
+        40% {
+            opacity: 0.4;
+        }
+        60% {
+            opacity: 0.6;
+        }
+        80% {
+            opacity: 0.8;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+
