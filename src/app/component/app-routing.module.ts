@@ -1,12 +1,12 @@
-import { VeilleComponent } from './../component/veille/veille.component';
-import { GsbAndroidComponent } from '../component/ppe/gsb-android/gsb-android.component';
-import { ProfilComponent } from './../component/profil/profil.component';
-import { GsbWebComponent } from '../component/ppe/gsb-web/gsb-web.component';
+import { VeilleComponent } from './veille/veille.component';
+import { GsbAndroidComponent } from './ppe/gsb-android/gsb-android.component';
+import { ProfilComponent } from './profil/profil.component';
+import { GsbWebComponent } from './ppe/gsb-web/gsb-web.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { WelcomeComponent } from '../component/welcome/welcome.component';
-import { ObsotrackerComponent } from '../component/stage/obsotracker/obsotracker.component';
-import { CassandiaComponent } from '../component/stage/cassandia/cassandia.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { ObsotrackerComponent } from './stage/obsotracker/obsotracker.component';
+import { CassandiaComponent } from './stage/cassandia/cassandia.component';
 
 const routes: Routes = [
   { path: 'accueil', component: WelcomeComponent },

@@ -1,41 +1,41 @@
 <div [class]="{'light-theme': true,
                'dark-theme': themeColor === 'dark'}">
-    <div class="dialog-container mat-elevation-z8">
-        <mat-toolbar class="mat-elevation-z2">
-            <span class="fill-remaining-space"></span>
-            <div [class]="data.langage"></div>
-            <div>Compétences en {{ data.langage }}</div>
-            <span class="fill-remaining-space"></span>
-            <button (click)="onClose()" mat-stroked-button>
-                <mat-icon>close</mat-icon>
-            </button>
-        </mat-toolbar>
-        <mat-list>
-            <h2>Projet(s) réalisé(s) en {{ data.langage }}:</h2>
-            <ng-container *ngFor="let projet of data.projets">
-                <ng-container *ngIf="projet.cr; else elseTemplate">
-                    <ul>
-                        <li>
-                            <div class="projet-container">
-                                <div class="projet-description">{{projet.description}}</div>
-                                <button mat-raised-button (click)="onClickProject(projet.route)">{{projet.name}}</button>
-                            </div>
-                        </li>
-                    </ul>
-                    
-                    </ng-container>
-                <ng-template #elseTemplate>
-                    <ul>
-                        <li>
-                            <div class="projet-container">
-                                <div class="projet-description">{{projet.name}}</div>
-                            </div>
-                        </li>
-                    </ul>
-                    </ng-template>
-            </ng-container>
-        </mat-list>
-        <!-- <h2>Projet(s) réalisé(s) en {{ data.langage }}:</h2>
+  <div class="dialog-container mat-elevation-z8">
+    <mat-toolbar class="mat-elevation-z2">
+      <span class="fill-remaining-space"></span>
+      <div [class]="data.langage"></div>
+      <div>Compétences en {{ data.langage }}</div>
+      <span class="fill-remaining-space"></span>
+      <button (click)="onClose()" mat-stroked-button>
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-toolbar>
+    <mat-list>
+      <h2>Projet(s) réalisé(s) en {{ data.langage }}:</h2>
+      <ng-container *ngFor="let projet of data.projets">
+        <ng-container *ngIf="projet.cr; else elseTemplate">
+          <ul>
+            <li>
+              <div class="projet-container">
+                <div class="projet-description">{{ projet.description }}</div>
+                <button mat-raised-button (click)="onClickProject(projet.route)">{{projet.name}}</button>
+              </div>
+            </li>
+          </ul>
+
+        </ng-container>
+        <ng-template #elseTemplate>
+          <ul>
+            <li>
+              <div class="projet-container">
+                <div class="projet-description">{{projet.name}}</div>
+              </div>
+            </li>
+          </ul>
+        </ng-template>
+      </ng-container>
+    </mat-list>
+    <!-- <h2>Projet(s) réalisé(s) en {{ data.langage }}:</h2>
         <mat-tab-group color="accent">
             <ng-container *ngFor="let projet of data.projets">
                 <mat-tab [label]="projet.name">
@@ -61,5 +61,5 @@
                 </mat-tab>
             </ng-container>
           </mat-tab-group> -->
-    </div>
+  </div>
 </div>

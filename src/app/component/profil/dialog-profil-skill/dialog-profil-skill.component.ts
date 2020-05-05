@@ -1,4 +1,4 @@
-import { ThemePickerService } from './../../../core/services/theme-picker.service';
+import { ThemePickerService } from '../../../shared/services/theme-picker/theme-picker.service';
 import { Observable } from 'rxjs';
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
@@ -11,7 +11,6 @@ import { Router } from '@angular/router';
 })
 export class DialogProfilSkillComponent implements OnInit {
 
-  isDarkTheme: Observable<boolean>;
   theme: Observable<string>;
   themeColor: string;
 

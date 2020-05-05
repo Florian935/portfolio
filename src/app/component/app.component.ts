@@ -1,5 +1,5 @@
-import { Observable } from 'rxjs';
-import { ThemePickerService } from '../core/services/theme-picker.service';
+import { Observable, Subscription } from 'rxjs';
+import { ThemePickerService } from '../shared/services/theme-picker/theme-picker.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,14 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  isDarkTheme: Observable<boolean>;
   themeColor: string;
 
-  constructor(private themePicker: ThemePickerService) { }
+  constructor(private _themePicker: ThemePickerService) { }
 
   ngOnInit(): void {
-    this.isDarkTheme = this.themePicker.isDarkTheme;
-    this.themePicker.theme.subscribe(
+    this._themePicker.theme$.subscribe(
       (theme) => this.themeColor = theme
     );
   }

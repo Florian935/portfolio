@@ -1,4 +1,4 @@
-import { ThemePickerService } from '../../../core/services/theme-picker.service';
+import { ThemePickerService } from '../../../shared/services/theme-picker/theme-picker.service';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -9,18 +9,11 @@ import { Observable } from 'rxjs';
 })
 export class ThemeComponent implements OnInit {
 
-  isDarkTheme: Observable<boolean>;
   theme: string;
 
   constructor(private themePicker: ThemePickerService) {}
 
-  ngOnInit(): void {
-    this.isDarkTheme = this.themePicker.isDarkTheme;
-  }
-
-  toggleDarkTheme(checked: boolean) {
-    this.themePicker.setDarkTheme(checked);
-  }
+  ngOnInit(): void {}
 
   changeTheme(theme: string) {
     this.themePicker.setTheme(theme);

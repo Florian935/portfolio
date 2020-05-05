@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SkillService } from 'src/app/services/skill.service';
+import { SkillService } from 'src/app/shared/services/skill/skill.service';
 
 @Component({
   selector: 'app-profil',
