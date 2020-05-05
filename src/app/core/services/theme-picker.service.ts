@@ -8,6 +8,7 @@ export class ThemePickerService {
 
   private _darkTheme = new Subject<boolean>();
   isDarkTheme = this._darkTheme.asObservable();
+  themeColor: string = 'light';
 
   private _theme = new Subject<string>();
   theme = this._theme.asObservable();
@@ -19,6 +20,7 @@ export class ThemePickerService {
   }
 
   setTheme(theme: string): void {
+    this.themeColor = theme;
     this._theme.next(theme);
   }
 }

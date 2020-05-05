@@ -1,4 +1,4 @@
-import { ThemePickerService } from './../../core/services/theme-picker.service';
+import { ThemePickerService } from '../../../core/services/theme-picker.service';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 

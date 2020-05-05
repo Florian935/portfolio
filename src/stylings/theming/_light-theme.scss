@@ -6,12 +6,13 @@
 
 .light-theme {
     $primary: mat-palette($mat-green, 700);
-    $accent: mat-palette($mat-indigo, 800, A100, A400);
-    $warn: mat-palette($mat-red, 700);
+    $accent: mat-palette($mat-indigo, 300);
+    $warn: mat-palette($mat-red);
     $background: mat-palette($mat-blue);
     $background-component: mat-color(mat-palette($mat-grey), 100, 0.5);
     $background-header: mat-color(mat-palette($mat-grey), 200, 1);
     $background-footer: mat-color(mat-palette($mat-grey), 300);
+    $background-dialog: mat-color(mat-palette($mat-grey), 100);
     $color-text-component: mat-color(mat-palette($md-dark), 700);
     $color-text-header: mat-color(mat-palette($mat-grey), 800);
     $color-text-footer: mat-color(mat-palette($mat-grey), 600, 0.7);
@@ -22,4 +23,5 @@
     @include component-themes($theme, $background-component, $color-text-component);
     @include header-themes($theme, $background-header, $color-text-header);
     @include footer-themes($theme, $background-footer, $color-text-footer);
+    @include dialog-themes($theme, $background-dialog, $color-text-component);
 }

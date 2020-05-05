@@ -1,0 +1,28 @@
+@import '~@angular/material/theming';
+
+@mixin veille-theme($theme, $background, $color-text) {
+    $accent: map-get($theme, accent);
+    $primary: map-get($theme, primary);
+    $warn: map-get($theme, warn);
+    $back: map-get($theme, background);
+    $background-color: mat-color($back, card);
+    $background-color-primary: mat-color($primary, darker, 1);
+    $background-color-accent: mat-color($accent, lighter, 1);
+    $background-color-warn: mat-color($warn, lighter, 1);
+
+
+    .veille {
+        padding: 90px 0 20px 0;
+        height: 100%;
+
+        .container {
+            @include mat-elevation(4);
+            border-radius: 4px;
+            width: 70%;
+            color: $color-text;
+            margin: auto;
+            padding: 25px;
+            background-color: $background-color;
+        }
+    }
+}

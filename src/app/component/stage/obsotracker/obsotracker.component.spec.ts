@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SecondTileComponent } from './second-tile.component';
+import { ObsotrackerComponent } from './obsotracker.component';
 
-describe('SecondTileComponent', () => {
-  let component: SecondTileComponent;
-  let fixture: ComponentFixture<SecondTileComponent>;
+describe('ThirdTileComponent', () => {
+  let component: ObsotrackerComponent;
+  let fixture: ComponentFixture<ObsotrackerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SecondTileComponent ]
+      declarations: [ ObsotrackerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SecondTileComponent);
+    fixture = TestBed.createComponent(ObsotrackerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

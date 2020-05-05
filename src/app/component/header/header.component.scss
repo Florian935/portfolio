@@ -10,6 +10,7 @@
 
 button {
     margin-right: 15px;
+    min-width: 110px;
 
     &:hover {
         background-color: rgb(209, 209, 209, 0.1);
@@ -49,5 +50,10 @@ button {
             opacity: 1;
         }
     }
+}
+
+mat-icon {
+    margin-bottom: 3px;
+    margin-right: 4px;
 }
 

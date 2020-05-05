@@ -1,6 +1,6 @@
 @import '~@angular/material/theming';
 
-@mixin second-tile-theme($theme, $background, $color-text) {
+@mixin gsb-web-theme($theme, $background, $color-text) {
     $accent: map-get($theme, accent);
     $primary: map-get($theme, primary);
     $warn: map-get($theme, warn);
@@ -11,15 +11,18 @@
     $background-color-warn: mat-color($warn, lighter, 1);
 
 
-    .second-tile {
-        @include mat-elevation(2);
-        background-color: $background;
-
-        div {
+    .gsb-web {
+        padding: 90px 0 20px 0;
+        height: 100%;
+        
+        .container {
+            @include mat-elevation(4);
+            border-radius: 4px;
+            width: 70%;
             color: $color-text;
-            line-height: 2.4rem;
-            font-size: 2rem;
-            padding: 80px 100px;
+            margin: auto;
+            padding: 25px;
+            background-color: $background-color;
         }
     }
 }

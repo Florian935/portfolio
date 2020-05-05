@@ -1,21 +1,28 @@
 @import '../app/component/profil/profil.component.scss-theme';
-@import '../app/component/second-tile/second-tile.component.scss-theme';
-@import '../app/component/third-tile/third-tile.component.scss-theme';
-@import '../app/component/theme/theme.component.scss-theme';
+@import '../app/component/ppe/gsb-web/gsb-web.component.scss-theme';
+@import '../app/component/ppe/gsb-android/gsb-android.component.scss-theme';
+@import '../app/component/header/theme/theme.component.scss-theme';
 @import '../app/component/app.component.scss-theme';
 @import '../app/component/header/header.component.scss-theme';
 @import '../app/component/footer/footer.component.scss-theme';
 @import '../app/component/welcome/welcome.component.scss-theme';
+@import '../app/component/profil/dialog-profil-skill/dialog-profil-skill.component.scss-theme';
+@import '../app/component/stage/obsotracker/obsotracker.component.scss-theme';
+@import '../app/component/stage/cassandia/cassandia.component.scss-theme';
+@import '../app/component/veille/veille.component.scss-theme';
 @import "~@angular/material/theming";
 
 
 @mixin component-themes($theme, $background: white, $color-text) {
     @include tile-theme($theme, $background, $color-text);
-    @include second-tile-theme($theme, $background, $color-text);
-    @include third-tile-theme($theme, $background, $color-text);
+    @include gsb-web-theme($theme, $background, $color-text);
+    @include gsb-android-theme($theme, $background, $color-text);
+    @include obsotracker-theme($theme, $background, $color-text);
+    @include cassandia-theme($theme, $background, $color-text);
     @include theme-component-theme($theme, $background, $color-text);
     @include app-theme($theme, $background, $color-text);
     @include welcome-theme($theme, $background, $color-text);
+    @include veille-theme($theme, $background, $color-text);
 }
 
 @mixin header-themes($theme, $background, $color-text) {
@@ -24,4 +31,8 @@
 
 @mixin footer-themes($theme, $background, $color-text) {
     @include footer-theme($theme, $background, $color-text);
+}
+
+@mixin dialog-themes($theme, $background, $color-text) {
+    @include dialog-skill-theme($theme, $background, $color-text);
 }

@@ -8,6 +8,10 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatListModule } from '@angular/material/list';
+import { MatTabsModule } from '@angular/material/tabs';
 
 const materialModules = [
   MatButtonModule,
@@ -18,7 +22,11 @@ const materialModules = [
   MatMenuModule,
   MatTooltipModule,
   MatIconModule,
-  MatDividerModule
+  MatDividerModule,
+  MatProgressSpinnerModule,
+  MatDialogModule,
+  MatListModule,
+  MatTabsModule
 ];
 
 @NgModule({

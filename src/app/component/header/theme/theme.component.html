@@ -1,0 +1,8 @@
+<div class="theme-component">
+    <button class="button-theme" mat-raised-button [matMenuTriggerFor]="appMenu" matTooltip="select an other theme for the portfolio">
+        <mat-icon color="warn">format_color_fill</mat-icon>Theme</button>
+    <mat-menu #appMenu="matMenu">
+        <button mat-menu-item (click)="changeTheme('light')">Light theme</button>
+        <button mat-menu-item (click)="changeTheme('dark')">Dark theme</button>
+    </mat-menu>
+</div>

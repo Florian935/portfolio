@@ -10,14 +10,12 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
 
   isDarkTheme: Observable<boolean>;
-  theme: Observable<string>;
   themeColor: string;
 
   constructor(private themePicker: ThemePickerService) { }
 
   ngOnInit(): void {
     this.isDarkTheme = this.themePicker.isDarkTheme;
-    this.theme = this.themePicker.theme;
     this.themePicker.theme.subscribe(
       (theme) => this.themeColor = theme
     );

@@ -13,16 +13,16 @@
 
     .theme-component {
         //@include mat-elevation(3);
-        background-color: $background;
-        color: $color-text;
+        // background-color: $background;
+        // color: $color-text;
 
         .button-theme {
-            background-color: #eeeeee;
-            color: #9c8e88;
-            border: solid rgb(197, 197, 197) 1px;
+            // background-color: #eeeeee;
+            // color: #9c8e88;
+            // border: solid rgb(197, 197, 197) 1px;
 
             &:hover {
-                background-color: rgb(216, 215, 215);
+                background-color: rgb(148, 148, 148);
             }
         }
     }
