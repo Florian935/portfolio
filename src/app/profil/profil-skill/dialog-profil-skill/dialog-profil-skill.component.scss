@@ -1,0 +1,126 @@
+mat-toolbar {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.fill-remaining-space {
+    flex: 1 1 auto;
+}
+
+button {
+
+    margin-top: 10px;
+
+    mat-icon {
+        color: red;
+    }
+}
+
+.mat-stroked-button {
+    height: 35px;
+    width: 35px;
+    padding: 0;
+    min-width: 35px;
+}
+
+.angular {
+    width: 50px;
+    height: 50px;
+    background-image: url('src/assets/logo-angular.png');
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.springboot {
+    width: 50px;
+    height: 50px;
+    background-image: url('src/assets/logo-spring-boot.png');
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.symfony {
+    width: 40px;
+    height: 40px;
+    background-image: url('src/assets/logo-symfony.svg');
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.java {
+    width: 25px;
+    height: 45px;
+    background-image: url('src/assets/logo-java.png');
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.c-sharp {
+    width: 50px;
+    height: 55px;
+    background-image: url('src/assets/logo-csharp.png');
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.php {
+    width: 55px;
+    height: 28px;
+    background-image: url('src/assets/logo-php.svg');
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.mysql {
+    width: 58px;
+    height: 45px;
+    background-image: url('src/assets/logo-mysql.svg');
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.postgresql {
+    width: 61px;
+    height: 58px;
+    background-image: url('src/assets/logo-postgresql.png');
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.mat-raised-button {
+    width: 110px;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+mat-list {
+    padding: 10px;
+
+    mat-list-item {
+        margin-bottom: 15px;
+    }
+}
+
+.projet-description {
+    width: 98%;
+    text-align: justify;
+}
+
+.projet-container {
+    padding: 15px;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+mat-tab-group {
+    width: 100%;
+    margin: auto;
+}

@@ -1,15 +1,15 @@
-@import '../app/component/profil/profil.component.scss-theme';
-@import '../app/component/ppe/gsb-web/gsb-web.component.scss-theme';
-@import '../app/component/ppe/gsb-android/gsb-android.component.scss-theme';
-@import '../app/component/header/theme/theme.component.scss-theme';
-@import '../app/component/app.component.scss-theme';
-@import '../app/component/header/header.component.scss-theme';
-@import '../app/component/footer/footer.component.scss-theme';
-@import '../app/component/welcome/welcome.component.scss-theme';
-@import '../app/component/profil/dialog-profil-skill/dialog-profil-skill.component.scss-theme';
-@import '../app/component/stage/obsotracker/obsotracker.component.scss-theme';
-@import '../app/component/stage/cassandia/cassandia.component.scss-theme';
-@import '../app/component/veille/veille.component.scss-theme';
+@import '../app/profil/profil.component.scss-theme';
+@import '../app/ppe/gsb-web/gsb-web.component.scss-theme';
+@import '../app/ppe/gsb-android/gsb-android.component.scss-theme';
+@import '../app/core/components/header/theme/theme.component.scss-theme';
+@import '../app/app.component.scss-theme';
+@import '../app/core/components/header/header.component.scss-theme';
+@import '../app/core/components/footer/footer.component.scss-theme';
+@import '../app/welcome/welcome.component.scss-theme';
+@import '../app/profil/profil-skill/dialog-profil-skill/dialog-profil-skill.component.scss-theme';
+@import '../app/stage/obsotracker/obsotracker.component.scss-theme';
+@import '../app/stage/cassandia/cassandia.component.scss-theme';
+@import '../app/veille/veille.component.scss-theme';
 @import "~@angular/material/theming";
 
 

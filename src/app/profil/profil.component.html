@@ -1,0 +1,109 @@
+<div class="profil">
+  <div class="container">
+
+    <!-- BIENVENUE -->
+    <h2 class="bienvenue">Bienvenue</h2>
+    <p class="contenu contenu-bienvenue">
+      Ce portfolio a pour but de vous montrer les compétences que j'ai pu acquérir tout au long de ma formation.
+      Aussi, vous y trouverez les fiches synthèses des différents projets en entreprise et pendant mes projets
+      personnels et scolaires que j'ai pu réaliser. A travers ce portfolio, vous pourrez voir quels moyens j'emploie
+      pour rester au courant des dernières nouveautés dans le domaine de l'informatique qui est en perpétuelle
+      évolution.
+    </p>
+
+    <mat-divider></mat-divider>
+
+    <!-- MON PROFIL -->
+    <div class="mes-competences">
+      <mat-icon>assignment_ind</mat-icon>
+      <h2>Mon profil</h2>
+    </div>
+    <p class="contenu">
+      Je suis actuellement en seconde année d'un BTS SIO option SLAM dans le but de devenir développeur.
+      Après avoir obtenu une licence STAPS parcours entraînement sportif en 2017, j'ai travaillé au sein
+      d'une salle de sport en tant que commercial/coach sportif/agent d'accueil. Etant passionné de sport
+      depuis quelques années, je me suis énormément épanouie dans ce métier. Cependant, le domaine de
+      l'informatique et des technologies m'a depuis toujours attiré et intéressé. C'est pour cela qu'en 2018,
+      j'ai décidé de reprendre des études dans l'informatique dans le but d'en faire mon métier.
+      Passionné par ce domaine, j'ai une soif d'apprentissage qui grandit au fur et à mesure des connaissances
+      que j'acquiers dans ma formation et parallèlement au plaisir que je prends à coder.
+    </p>
+    <p class="cv">
+      Vous pouvez retrouver mon CV ici: <button mat-raised-button><a class="link" href="https://florian935.github.io/portfolio/documents/cv-florian-martin.pdf" target="_blank"><div class="text-lien">CV</div><mat-icon>assignment</mat-icon></a></button>
+    </p>
+
+    <mat-divider></mat-divider>
+
+    <!-- MES COMPETENCES -->
+    <div class="mes-competences">
+      <i class="fa fa-cog fa-spin"></i>
+      <h2 class="titre-competence">Mes compétences</h2>
+    </div>
+
+    <!-- FRAMEWORKS -->
+    <h2 class="titre-framework">Compétences en framework</h2>
+    <div class="body-spinner">
+      <ng-container *ngFor="let framework of skills[0]; let i = index">
+        <app-profil-skill class="container-spinner" [skill]="framework"></app-profil-skill>
+      </ng-container>
+    </div>
+
+    <!-- SOFTWARES -->
+    <h2 class="titre-software">Compétences en langage logiciel et web</h2>
+    <div class="body-spinner">
+      <ng-container *ngFor="let software of skills[1]; let i = index">
+        <app-profil-skill class="container-spinner" [skill]="software"></app-profil-skill>
+      </ng-container>
+    </div>
+
+    <!-- DATABASE -->
+    <h2 class="titre-software">Compétences en base de données</h2>
+    <div class="body-spinner">
+      <ng-container *ngFor="let database of skills[2]; let i = index">
+        <app-profil-skill class="container-spinner database-spinner" [skill]="database"></app-profil-skill>
+      </ng-container>
+    </div>
+
+    <h2 class="titre-autres-competences">Autres compétences</h2>
+    <div class="competences">
+
+      <!-- METHODE DE CONCEPTION ET IDE -->
+      <mat-card class="mat-elevation-z8">
+        <mat-card-header>
+          <mat-card-title>Méthode de conception</mat-card-title>
+          <mat-card-subtitle>méthode de conception pratiquées</mat-card-subtitle>
+        </mat-card-header>
+        <mat-divider class="divider"></mat-divider>
+        <mat-card-content>
+          <div class="detail">
+            <div class="description">
+              <div class="description-merise">Merise/2</div>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="description">
+              <div class="description-uml">UML</div>
+            </div>
+          </div>
+        </mat-card-content>
+        <mat-card-header>
+          <mat-card-title>IDE et logiciels</mat-card-title>
+        </mat-card-header>
+        <mat-divider class="divider"></mat-divider>
+        <mat-card-content>
+          <div class="detail">
+            <div class="description">
+              <div class="description-ide">​​Visual Studio Code, Eclipse, Code Blocks, NetBeans, Visual Studio,
+                IntelliJ, Android Studio</div>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="description">
+              <div class="description-logiciel">WinDesign, Wamp, MySql Workbench</div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
