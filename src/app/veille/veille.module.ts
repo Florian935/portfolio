@@ -4,8 +4,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { VeilleRoutingModule } from './veille-routing.module';
-import { VeilleComponent } from './veille.component';
+import { VeilleRoutingModule } from '@veille/veille-routing.module';
+import { VeilleComponent } from '@veille/veille.component';
 
 
 @NgModule({

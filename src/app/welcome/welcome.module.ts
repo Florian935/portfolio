@@ -3,8 +3,8 @@ import { WelcomeComponent } from './welcome.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { WelcomeRoutingModule } from './welcome-routing.module';
-import { ParticlesDirective } from '../shared/directives/particles.directive';
+import { WelcomeRoutingModule } from '@welcome/welcome-routing.module';
+import { ParticlesDirective } from '@shared/directives/particles.directive';
 
 @NgModule({
   declarations: [

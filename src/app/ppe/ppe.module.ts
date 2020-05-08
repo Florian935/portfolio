@@ -4,9 +4,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { PpeRoutingModule } from './ppe-routing.module';
-import { GsbAndroidComponent } from './gsb-android/gsb-android.component';
-import { GsbWebComponent } from './gsb-web/gsb-web.component';
+import { PpeRoutingModule } from '@ppe/ppe-routing.module';
+import { GsbWebComponent } from '@ppe/gsb-web/gsb-web.component';
+import { GsbAndroidComponent } from '@ppe/gsb-android/gsb-android.component';
 
 
 @NgModule({

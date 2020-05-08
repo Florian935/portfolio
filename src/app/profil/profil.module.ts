@@ -8,10 +8,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ProfilRoutingModule } from './profil-routing.module';
-import { ProfilComponent } from './profil.component';
-import { ProfilSkillComponent } from './profil-skill/profil-skill.component';
-import { DialogProfilSkillComponent } from './profil-skill/dialog-profil-skill/dialog-profil-skill.component';
+import { ProfilRoutingModule } from '@profil/profil-routing.module';
+import { ProfilComponent } from '@profil/profil.component';
+import { ProfilSkillComponent } from '@profil/profil-skill/profil-skill.component';
+import { DialogProfilSkillComponent } from '@profil/profil-skill/dialog-profil-skill/dialog-profil-skill.component';
 import { MatDialogModule } from '@angular/material/dialog';
 
 

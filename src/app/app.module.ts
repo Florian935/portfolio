@@ -1,3 +1,4 @@
+import { CoreModule } from '@core/core.module';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -8,7 +9,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
-import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [

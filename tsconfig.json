@@ -19,7 +19,13 @@
       "dom"
     ],
     "paths": {
-      "@stage/*": ["src/app/component/stage/*"],
+      "@stage/*": ["src/app/stage/*"],
+      "@ppe/*": ["src/app/ppe/*"],
+      "@profil*": ["src/app/profil/*"],
+      "@veille/*": ["src/app/veille/*"],
+      "@welcome/*": ["src/app/welcome/*"],
+      "@core/*": ["src/app/core/*"],
+      "@shared/*": ["src/app/shared/*"]
     }
   },
   "angularCompilerOptions": {
