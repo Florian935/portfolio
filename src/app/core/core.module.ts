@@ -1,4 +1,6 @@
-import { MaterialModule } from './../shared/material.module';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -6,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ThemeComponent } from './components/header/theme/theme.component';
 import { ThemePickerService } from './services/ui/theme-picker.service';
+import { MatButtonModule } from '@angular/material/button';
 
 
 
@@ -18,13 +21,15 @@ import { ThemePickerService } from './services/ui/theme-picker.service';
   imports: [
     CommonModule,
     RouterModule,
-    MaterialModule
+    MatToolbarModule,
+    MatIconModule,
+    MatMenuModule,
+    MatButtonModule
   ],
   exports: [
     FooterComponent,
     HeaderComponent,
-    ThemeComponent,
-    MaterialModule,
+    ThemeComponent
   ],
   providers: [
     ThemePickerService

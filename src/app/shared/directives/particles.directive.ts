@@ -1,6 +1,6 @@
 import { Directive, ElementRef, Input, OnDestroy, HostListener, OnInit, OnChanges } from '@angular/core';
 
-/* 
+/*
   Variables to be used outside of directive scope
   To improve performance.
 */
@@ -201,7 +201,7 @@ class Link {
       this.alpha = 1 - (dx * dx + dy * dy) / linkDistance2;
       this.batchId = this.alpha * linkBatches | 0;
       this.batchId = this.batchId >= linkBatches ? linkBatches : this.batchId;
-  }		
+  }
   addPath(ctx) {
       ctx.moveTo(this.p1.x, this.p1.y);
       ctx.lineTo(this.p2.x, this.p2.y);
@@ -254,7 +254,7 @@ class Particle {
       return  ((xd - w) ** 2 + (yd - h) ** 2) <= linkDistance2;
 
   }
-  update(ctx, repulse = true) { 
+  update(ctx, repulse = true) {
       this.explored = false;
       const r = this.r;
       let W, H;
@@ -300,7 +300,7 @@ class Particle {
       const dist = (dx * dx + dy * dy) ** 0.5;
       var rf = ((1 - (dist / repulseDistance) ** 2)  * 100);
           rf = (rf < 0 ? 0 : rf > 50  ? 50 : rf) / dist;
-      
+
       var posX = this.x + dx * rf;
       var posY = this.y + dy * rf;
 
@@ -325,11 +325,11 @@ class Bounds {
   bottom: number;
   diagonal: number;
   constructor(x, y, w, h) { this.init(x, y, w, h) }
-  init(x,y,w,h) { 
-      this.x = x; 
-      this.y = y; 
-      this.w = w; 
-      this.h = h; 
+  init(x,y,w,h) {
+      this.x = x;
+      this.y = y;
+      this.w = w;
+      this.h = h;
       this.left = x - w;
       this.right = x + w;
       this.top = y - h;
@@ -366,7 +366,7 @@ class QuadTree {
   SW: QuadTree;
   constructor(boundary: Bounds = new Bounds(canvas.width / 2,canvas.height / 2,canvas.width / 2 ,canvas.height / 2), depth = 0) {
   this.boundary = boundary;
-    this.divided = false;		
+    this.divided = false;
       this.points = depth > 1 ? [] : null;
       this.pointCount = 0
       this.drawn = false;
@@ -415,7 +415,7 @@ class QuadTree {
           const depth = this.depth + 1;
 
           this.NE = new QuadTree(new Bounds(x + w, y - h, w, h), depth);
-          this.NW = new QuadTree(new Bounds(x - w, y - h, w, h), depth); 
+          this.NW = new QuadTree(new Bounds(x - w, y - h, w, h), depth);
           this.SE = new QuadTree(new Bounds(x + w, y + h, w, h), depth);
           this.SW = new QuadTree(new Bounds(x - w, y + h, w, h), depth);
       } else {

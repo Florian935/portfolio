@@ -1,3 +1,5 @@
+import { SkillService } from './services/skill.service';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
@@ -10,6 +12,7 @@ import { ProfilRoutingModule } from './profil-routing.module';
 import { ProfilComponent } from './profil.component';
 import { ProfilSkillComponent } from './profil-skill/profil-skill.component';
 import { DialogProfilSkillComponent } from './profil-skill/dialog-profil-skill/dialog-profil-skill.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -25,7 +28,12 @@ import { DialogProfilSkillComponent } from './profil-skill/dialog-profil-skill/d
     MatToolbarModule,
     MatListModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatDialogModule
+  ],
+  providers: [
+    SkillService
   ],
   entryComponents: [
     DialogProfilSkillComponent

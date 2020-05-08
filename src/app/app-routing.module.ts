@@ -1,26 +1,26 @@
 import { VeilleComponent } from './veille/veille.component';
-import { GsbAndroidComponent } from './ppe/gsb-android/gsb-android.component';
-import { GsbWebComponent } from './ppe/gsb-web/gsb-web.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { ObsotrackerComponent } from './stage/obsotracker/obsotracker.component';
-import { CassandiaComponent } from './stage/cassandia/cassandia.component';
 
 const routes: Routes = [
   {
     path: 'profil',
-    loadChildren: './profil/profil.module#ProfilModule',
+    loadChildren: () => import('./profil/profil.module').then(m => m.ProfilModule)
   },
   {
     path: 'accueil',
-    loadChildren: './welcome/welcome.module#WelcomeModule'
+    loadChildren: () => import('./welcome/welcome.module').then(m => m.WelcomeModule)
   },
-  { path: 'ppe/gsb-appli-web', component: GsbWebComponent },
-  { path: 'ppe/gsb-appli-android', component: GsbAndroidComponent },
-  { path: 'stage/obsotracker', component: ObsotrackerComponent },
-  { path: 'stage/cassandia', component: CassandiaComponent },
-  { path: 'veille', component: VeilleComponent },
+  { path: 'ppe',
+    loadChildren: () => import('./ppe/ppe.module').then(m => m.PpeModule)
+  },
+  { path: 'stage',
+    loadChildren: () => import('./stage/stage.module').then(m => m.StageModule)
+  },
+  {
+    path: 'veille',
+    loadChildren: () => import('./veille/veille.module').then(m => m.VeilleModule)
+  },
   { path: '**', redirectTo: 'accueil' },
 ];
 
