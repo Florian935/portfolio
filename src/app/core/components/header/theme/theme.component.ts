@@ -8,8 +8,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThemeComponent implements OnInit {
 
-  theme: string;
-
   constructor(private themePicker: ThemePickerService) {}
 
   ngOnInit(): void {}

@@ -5,7 +5,7 @@ import { DialogProfilSkillComponent } from './dialog-profil-skill/dialog-profil-
 @Component({
   selector: 'app-profil-skill',
   templateUrl: './profil-skill.component.html',
-  styleUrls: ['./profil-skill.component.scss']
+  styleUrls: ['./profil-skill.component.scss'],
 })
 export class ProfilSkillComponent implements OnInit {
 

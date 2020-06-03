@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 
 import { WelcomeRoutingModule } from '@welcome/welcome-routing.module';
 import { ParticlesDirective } from '@shared/directives/particles.directive';
+import { SkillService } from '@profilservices/skill.service';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,6 @@ import { ParticlesDirective } from '@shared/directives/particles.directive';
     CommonModule,
     WelcomeRoutingModule,
     MatButtonModule,
-  ]
+  ],
 })
 export class WelcomeModule { }

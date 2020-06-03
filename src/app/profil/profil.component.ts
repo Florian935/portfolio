@@ -11,8 +11,8 @@ export class ProfilComponent implements OnInit {
   skills: any;
 
   constructor(
-    private _skillService: SkillService
-  ) { }
+    private _skillService: SkillService,
+    ) { }
 
   ngOnInit(): void {
     this.skills = this._skillService.skills;
